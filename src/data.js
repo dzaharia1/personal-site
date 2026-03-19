@@ -14,9 +14,15 @@ export const projects = [
     categories: ["utility"]
   },
   {
-    title: "poetry cam",
+    title: "poetry cam app",
     href: "https://poetrycam.adanmade.app",
-    description: "capture poems of what you see and convert them back into images",
+    description: "read the poems you've captured with the poetry cam and cyber then back into images",
+    year: 2026,
+    categories: ["AI", "play"]
+  },
+  {
+    title: "poetry cam",
+    description: "look at the world in words that rhyme",
     year: 2026,
     categories: ["AI", "play"]
   },
@@ -26,6 +32,12 @@ export const projects = [
     description: "celebrate the new year with all of your friends in my apartment",
     year: 2026,
     categories: ["play"]
+  },
+  {
+    title: "ir remote",
+    description: "control devices via infrared with home assistant",
+    year: 2026,
+    categories: ["utility"]
   },
   {
     title: "desktop panel",
@@ -41,8 +53,26 @@ export const projects = [
     categories: ["astronomy", "utility"]
   },
   {
+    title: "martian os",
+    description: "a control panel for me and my fiance",
+    year: 2025,
+    categories: ["utility"]
+  },
+  {
     title: "martians on air",
     description: "my fiance and i know when the other is on a work call",
+    year: 2025,
+    categories: ["utility"]
+  },
+  {
+    title: "spanish coach",
+    description: "translate between english and latin american spanish- but with explanations",
+    year: 2025,
+    categories: ["utility"]
+  },
+  {
+    title: "macropad",
+    description: "a dedicated hotkey pad for my favorite apps",
     year: 2025,
     categories: ["utility"]
   },
