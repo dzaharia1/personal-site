@@ -91,9 +91,39 @@ export const projects = [
     categories: ["utility"]
   },
   {
+    title: "gameshow buzzer",
+    description: "a simple gameshow buzzer",
+    year: 2025,
+    categories: ["play"]
+  },
+  {
     title: "Subway Sign",
     description: "glance at upcoming subway arrivals",
     year: 2024,
+    categories: ["utility"]
+  },
+  {
+    title: "thermostat",
+    description: "control my heating unit with a diy iot thermostat",
+    year: 2023,
+    categories: ["utility"]
+  },
+  {
+    title: "smart light",
+    description: "set the mood",
+    year: 2023,
+    categories: ["utility"]
+  },
+  {
+    title: "workout tracker",
+    description: "track and plan your weekly workout routine",
+    year: 2021,
+    categories: ["utility"]
+  },
+  {
+    title: "bike blinker",
+    description: "wireless turn signals for my bike using arduino and radio",
+    year: 2021,
     categories: ["utility"]
   }
 ];
