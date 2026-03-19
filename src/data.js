@@ -36,7 +36,7 @@ export const projects = [
   {
     title: "satellite map",
     href: "https://satellite-map.adanmade.app",
-    description: "lay back and watch the satellites orbiting above your head",
+    description: "lay back and watch the satellites orbiting above your head. e-ink optimized.",
     year: 2025,
     categories: ["astronomy", "utility"]
   },
