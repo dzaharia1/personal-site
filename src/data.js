@@ -7,6 +7,13 @@ export const projects = [
     categories: ["astronomy", "utility"]
   },
   {
+    title: "studio internet monitor",
+    href: "https://studio-internet-study.fcc.lol",
+    description: "a graph to monitor my makerspace's unreliable internet",
+    year: 2026,
+    categories: ["utility"]
+  },
+  {
     title: "poetry cam",
     href: "https://poetrycam.adanmade.app",
     description: "capture poems of what you see and convert them back into images",
@@ -19,6 +26,12 @@ export const projects = [
     description: "celebrate the new year with all of your friends in my apartment",
     year: 2026,
     categories: ["play"]
+  },
+  {
+    title: "desktop panel",
+    description: "screenless desktop home automation dashboard",
+    year: 2025,
+    categories: ["utility"]
   },
   {
     title: "satellite map",
@@ -37,6 +50,12 @@ export const projects = [
     title: "intake form",
     href: "https://intake.fcc.lol",
     description: "friends can submit project ideas to me and my friends",
+    year: 2025,
+    categories: ["utility"]
+  },
+  {
+    title: "apollo panel",
+    description: "An Apollo-inspired panel for controlling my apartment",
     year: 2025,
     categories: ["utility"]
   },
