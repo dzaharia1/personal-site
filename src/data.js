@@ -34,6 +34,12 @@ export const projects = [
     categories: ["play"]
   },
   {
+    title: "ir remote",
+    description: "control devices via infrared with home assistant",
+    year: 2026,
+    categories: ["utility"]
+  },
+  {
     title: "desktop panel",
     description: "screenless desktop home automation dashboard",
     year: 2025,
@@ -65,6 +71,12 @@ export const projects = [
     categories: ["utility"]
   },
   {
+    title: "macropad",
+    description: "a dedicated hotkey pad for my favorite apps",
+    year: 2025,
+    categories: ["utility"]
+  },
+  {
     title: "intake form",
     href: "https://intake.fcc.lol",
     description: "friends can submit project ideas to me and my friends",
@@ -74,12 +86,6 @@ export const projects = [
   {
     title: "apollo panel",
     description: "An Apollo-inspired panel for controlling my apartment",
-    year: 2025,
-    categories: ["utility"]
-  },
-  {
-    title: "macropad",
-    description: "a dedicated hotkey pad for my favorite apps",
     year: 2025,
     categories: ["utility"]
   },
