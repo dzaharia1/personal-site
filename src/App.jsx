@@ -49,6 +49,22 @@ const SubHeading = styled.h2`
   line-height: 1.2;
 `;
 
+const SocialLinks = styled.div`
+  margin-top: 16px;
+`;
+
+const SocialLink = styled.a`
+  color: #d7ecbc;
+  font-size: 0.9rem;
+  text-decoration: none;
+  opacity: 0.7;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: underline;
+  }
+`;
+
 const ContentSection = styled.div`
   flex: 2;
   @media (min-width: 768px) {
@@ -90,6 +106,9 @@ function App() {
       <HeaderSection>
         <MainHeading>Dan Zaharia</MainHeading>
         <SubHeading>projects</SubHeading>
+        <SocialLinks>
+          <SocialLink href="https://github.com/dzaharia1" target="_blank" rel="noopener noreferrer">github</SocialLink>
+        </SocialLinks>
       </HeaderSection>
       <ContentSection>
         <Tabs
