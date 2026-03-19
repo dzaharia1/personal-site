@@ -34,6 +34,12 @@ export const projects = [
     description: "friends can submit project ideas to me and my friends",
     year: 2025,
     categories: ["utility"]
+  },
+  {
+    title: "Subway Sign",
+    description: "glance at upcoming subway arrivals",
+    year: 2024,
+    categories: ["utility"]
   }
 ];
 
