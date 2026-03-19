@@ -28,6 +28,12 @@ export const projects = [
     categories: ["play"]
   },
   {
+    title: "desktop panel",
+    description: "screen less desktop home automation dashboard",
+    year: 2025,
+    categories: ["utility"]
+  },
+  {
     title: "satellite map",
     href: "https://satellitemap.adanmade.app",
     description: "watch satellites orbit above your head. E-ink optimized.",
