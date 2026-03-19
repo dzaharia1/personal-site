@@ -66,6 +66,7 @@ export const projects = [
   },
   {
     title: "spanish coach",
+    href: "https://spanish.adanmade.app",
     description: "translate between english and latin american spanish- but with explanations",
     year: 2025,
     categories: ["utility"]
