@@ -47,6 +47,12 @@ export const projects = [
     categories: ["astronomy", "utility"]
   },
   {
+    title: "martian os",
+    description: "a control panel for me and my fiance",
+    year: 2025,
+    categories: ["utility"]
+  },
+  {
     title: "martians on air",
     description: "my fiance and i know when the other is on a work call",
     year: 2025,
