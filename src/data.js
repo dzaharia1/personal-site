@@ -16,7 +16,7 @@ export const projects = [
   {
     title: "poetry cam app",
     href: "https://poetrycam.adanmade.app",
-    description: "capture poems of what you see and convert them back into images",
+    description: "read the poems you've captured with the poetry cam and cyber then back into images",
     year: 2026,
     categories: ["AI", "play"]
   },
