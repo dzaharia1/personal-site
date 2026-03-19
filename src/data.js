@@ -29,7 +29,7 @@ export const projects = [
   },
   {
     title: "desktop panel",
-    description: "screen less desktop home automation dashboard",
+    description: "screenless desktop home automation dashboard",
     year: 2025,
     categories: ["utility"]
   },
@@ -54,7 +54,7 @@ export const projects = [
     categories: ["utility"]
   },
   {
-    title: "Apollo Panel",
+    title: "apollo panel",
     description: "An Apollo-inspired panel for controlling my apartment",
     year: 2025,
     categories: ["utility"]
