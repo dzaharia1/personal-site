@@ -11,6 +11,16 @@ const Title = styled.div`
   margin-bottom: 4px;
 `;
 
+const TitleLink = styled.a`
+  color: #cdff8c;
+  font-size: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 const Description = styled.div`
   color: #d7ecbc;
   font-size: 0.9rem;
@@ -20,7 +30,15 @@ const Description = styled.div`
 export default function Listing({ project }) {
   return (
     <ListingContainer>
-      <Title>{project.title}</Title>
+      <Title>
+        {project.href ? (
+          <TitleLink href={project.href} target="_blank" rel="noreferrer">
+            {project.title}
+          </TitleLink>
+        ) : (
+          project.title
+        )}
+      </Title>
       <Description>{project.description}</Description>
     </ListingContainer>
   );
