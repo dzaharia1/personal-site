@@ -48,6 +48,12 @@ export const projects = [
     categories: ["utility"]
   },
   {
+    title: "Apollo Panel",
+    description: "An Apollo-inspired panel for controlling my apartment",
+    year: 2025,
+    categories: ["utility"]
+  },
+  {
     title: "Subway Sign",
     description: "glance at upcoming subway arrivals",
     year: 2024,
