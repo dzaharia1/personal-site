@@ -22,7 +22,7 @@ export const projects = [
   },
   {
     title: "satellite map",
-    href: "https://satellitemap.adanmade.app",
+    href: "https://satellite-map.adanmade.app",
     description: "watch satellites orbit above your head. E-ink optimized.",
     year: 2025,
     categories: ["astronomy", "utility"]
