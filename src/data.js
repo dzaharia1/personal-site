@@ -78,6 +78,12 @@ export const projects = [
     categories: ["utility"]
   },
   {
+    title: "macropad",
+    description: "a dedicated hotkey pad for my favorite apps",
+    year: 2025,
+    categories: ["utility"]
+  },
+  {
     title: "Subway Sign",
     description: "glance at upcoming subway arrivals",
     year: 2024,
