@@ -59,6 +59,12 @@ export const projects = [
     categories: ["utility"]
   },
   {
+    title: "spanish coach",
+    description: "translate between english and latin american spanish- but with explanations",
+    year: 2025,
+    categories: ["utility"]
+  },
+  {
     title: "intake form",
     href: "https://intake.fcc.lol",
     description: "friends can submit project ideas to me and my friends",
