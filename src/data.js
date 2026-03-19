@@ -7,6 +7,13 @@ export const projects = [
     categories: ["astronomy", "utility"]
   },
   {
+    title: "studio internet monitor",
+    href: "https://studio-internet-study.fcc.lol",
+    description: "a graph to monitor my makerspace's unreliable internet",
+    year: 2026,
+    categories: ["utility"]
+  },
+  {
     title: "poetry cam",
     href: "https://poetrycam.adanmade.app",
     description: "capture poems of what you see and convert them back into images",
