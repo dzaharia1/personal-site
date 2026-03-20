@@ -29,7 +29,7 @@ export const projects = [
   {
     title: "champagne's midnight meow",
     href: "https://happynewyear26.adanmade.app",
-    description: "celebrate the new year with all of your friends in my apartment",
+    description: "celebrate the new year with some cool cats in my apartment",
     year: 2026,
     categories: ["play"]
   },
