@@ -7,8 +7,9 @@ import Tabs from "./components/Tabs";
 const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0;
   padding: 40px 24px;
 
   @media (min-width: 768px) {
@@ -19,7 +20,7 @@ const AppContainer = styled.div`
 `;
 
 const HeaderSection = styled.div`
-  flex: 1;
+  width: 100%;
   margin-bottom: 48px;
 
   @media (min-width: 768px) {
@@ -50,7 +51,7 @@ const SubHeading = styled.h2`
 `;
 
 const ContentSection = styled.div`
-  flex: 2;
+  width: 100%;
   @media (min-width: 768px) {
     padding-top: 10px; /* align with header */
   }
