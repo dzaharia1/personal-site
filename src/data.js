@@ -15,7 +15,6 @@ export const projects = [
   },
   {
     title: "poetry cam app",
-    slug: "poetry-cam-app",
     href: "https://poetrycam.adanmade.app",
     description: "browse the verses you saw the world through",
     year: 2026,
