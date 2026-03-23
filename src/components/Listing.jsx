@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const ListingContainer = styled.div`
   margin-bottom: 24px;
@@ -21,6 +22,16 @@ const TitleLink = styled.a`
   }
 `;
 
+const RouterTitleLink = styled(Link)`
+  color: #cdff8c;
+  font-size: 1rem;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 const Description = styled.div`
   color: #d7ecbc;
   font-size: 0.9rem;
@@ -31,7 +42,11 @@ export default function Listing({ project }) {
   return (
     <ListingContainer>
       <Title>
-        {project.href ? (
+        {project.slug ? (
+          <RouterTitleLink to={`/project/${project.slug}`}>
+            {project.title}
+          </RouterTitleLink>
+        ) : project.href ? (
           <TitleLink href={project.href} target="_blank" rel="noreferrer">
             {project.title}
           </TitleLink>

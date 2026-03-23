@@ -15,14 +15,17 @@ export const projects = [
   },
   {
     title: "poetry cam app",
+    slug: "poetry-cam-app",
     href: "https://poetrycam.adanmade.app",
-    description: "read the poems you've captured with the poetry cam and cyber then back into images",
+    description: "browse the verses you saw the world through",
     year: 2026,
     categories: ["AI", "play"]
   },
   {
     title: "poetry cam",
-    description: "look at the world in words that rhyme",
+    slug: "poetrycam",
+    description: "see the world in verse",
+    images: ["/projects/poetrycam/poetry-cam-back.jpg", "/projects/poetrycam/poetry-cam-exploded.jpg", "/projects/poetrycam/poetry-cam-sample.png"],
     year: 2026,
     categories: ["AI", "play"]
   },
