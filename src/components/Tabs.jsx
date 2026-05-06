@@ -25,14 +25,17 @@ const TabButton = styled.button`
 export default function Tabs({ categories, activeTab, onTabClick }) {
   return (
     <TabsContainer>
-      {categories.map((category) => (
-        <TabButton
-          key={category}
-          $active={activeTab === category}
-          onClick={() => onTabClick(category)}
-        >
-          {category}
-        </TabButton>
+      {categories.map((category, i) => (
+        <>
+          <TabButton
+            key={category}
+            $active={activeTab === category}
+            onClick={() => onTabClick(category)}
+          >
+            {category}
+          </TabButton>
+          {i < categories.length - 1 && <p style={{ margin: "0" }}>|</p>}
+        </>
       ))}
     </TabsContainer>
   );

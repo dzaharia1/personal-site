@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { projects, allCategories } from "./data";
+import { projects } from "./data";
 import Listing from "./components/Listing";
 import Tabs from "./components/Tabs";
 
@@ -10,7 +10,7 @@ const AppContainer = styled.div`
   width: 100%;
   max-width: 1000px;
   margin: 0;
-  padding: 40px 24px;
+  padding: 40px 12px;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -70,6 +70,7 @@ const YearHeading = styled.h2`
 
 function App() {
   const [activeTab, setActiveTab] = useState("all");
+  const allCategories = ["all", ...Array.from(new Set(projects.flatMap((p) => p.categories)))];
 
   const filteredProjects =
     activeTab === "all"

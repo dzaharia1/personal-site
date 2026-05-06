@@ -9,7 +9,7 @@ const Container = styled.div`
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding: 40px 24px;
+  padding: 40px 12px;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -65,6 +65,19 @@ const ContentSection = styled.div`
   }
 `;
 
+const OpenLink = styled.a`
+  color: #cdff8c;
+  text-decoration: none;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 24px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
 const Description = styled.p`
   color: #d7ecbc;
   font-size: 1rem;
@@ -113,6 +126,7 @@ export default function ProjectDetail() {
         </MetaData>
       </HeaderSection>
       <ContentSection>
+        {project.href && <OpenLink href={project.href} target="_blank">play with the app</OpenLink>}
         <Description>{project.description}</Description>
         {project.images && project.images.length > 0 && (
           <ImageGrid>
