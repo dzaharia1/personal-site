@@ -121,7 +121,7 @@ export const projects = [
   {
     title: "apollo panel",
     slug: "apollopanel",
-    description: "Upgrade the thermostate to an Apollo-inspired panel for controlling my apartment",
+    description: "control your home while you're pretending you're an astronaut",
     images: [
       "/projects/apollopanel/PXL_20240102_220039450.jpg",
       "/projects/apollopanel/PXL_20240104_034450642.jpg",
