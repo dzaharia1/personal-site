@@ -94,6 +94,17 @@ export const projects = [
   },
   {
     title: "martians on air",
+    slug: "martiansonair",
+    images: [
+      "/projects/martiansonair/recording.mp4",
+      "/projects/martiansonair/inactive1.png",
+      "/projects/martiansonair/inactive2.png",
+      "/projects/martiansonair/inactive3.png",
+      "/projects/martiansonair/inactive4.png",
+      "/projects/martiansonair/activeciorapel.png",
+      "/projects/martiansonair/activegansito.png",
+      "/projects/martiansonair/activeboth.png"
+    ],
     description: "my fiance and i know when the other is on a work call",
     year: 2025,
     categories: ["utility", "play"]
