@@ -28,7 +28,7 @@ const HeaderSection = styled.div`
     top: 80px;
     margin-bottom: 0;
     padding-right: 48px;
-    max-width: 300px;
+    max-width: 350px;
   }
 `;
 
@@ -70,7 +70,10 @@ const YearHeading = styled.h2`
 
 function App() {
   const [activeTab, setActiveTab] = useState("all");
-  const allCategories = ["all", ...Array.from(new Set(projects.flatMap((p) => p.categories)))];
+  const allCategories = [
+    "all",
+    ...Array.from(new Set(projects.flatMap((p) => p.categories))),
+  ];
 
   const filteredProjects =
     activeTab === "all"

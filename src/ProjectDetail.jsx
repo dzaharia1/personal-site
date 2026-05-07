@@ -98,11 +98,6 @@ const ProjectImage = styled.img`
   position: relative;
   z-index: 10000;
   cursor: pointer;
-  transition: opacity 0.2s;
-  
-  &:hover {
-    opacity: 0.8;
-  }
 `;
 
 const ProjectVideo = styled.video`
@@ -113,7 +108,7 @@ const ProjectVideo = styled.video`
   z-index: 10000;
   cursor: pointer;
   transition: opacity 0.2s;
-  
+
   &:hover {
     opacity: 0.8;
   }
@@ -150,18 +145,30 @@ const LightboxImg = styled.img`
   max-width: 100%;
   max-height: 85vh;
   object-fit: contain;
-  transform: translate(${props => props.$pan.x}px, ${props => props.$pan.y}px) scale(${props => props.$zoom});
-  transition: ${props => props.$isDragging ? 'none' : 'transform 0.1s ease-out'};
-  cursor: ${props => props.$zoom > 1 ? (props.$isDragging ? "grabbing" : "grab") : "default"};
+  transform: translate(
+      ${(props) => props.$pan.x}px,
+      ${(props) => props.$pan.y}px
+    )
+    scale(${(props) => props.$zoom});
+  transition: ${(props) =>
+    props.$isDragging ? "none" : "transform 0.1s ease-out"};
+  cursor: ${(props) =>
+    props.$zoom > 1 ? (props.$isDragging ? "grabbing" : "grab") : "default"};
 `;
 
 const LightboxVid = styled.video`
   max-width: 100%;
   max-height: 85vh;
   object-fit: contain;
-  transform: translate(${props => props.$pan.x}px, ${props => props.$pan.y}px) scale(${props => props.$zoom});
-  transition: ${props => props.$isDragging ? 'none' : 'transform 0.1s ease-out'};
-  cursor: ${props => props.$zoom > 1 ? (props.$isDragging ? "grabbing" : "grab") : "default"};
+  transform: translate(
+      ${(props) => props.$pan.x}px,
+      ${(props) => props.$pan.y}px
+    )
+    scale(${(props) => props.$zoom});
+  transition: ${(props) =>
+    props.$isDragging ? "none" : "transform 0.1s ease-out"};
+  cursor: ${(props) =>
+    props.$zoom > 1 ? (props.$isDragging ? "grabbing" : "grab") : "default"};
 `;
 
 const CloseMessage = styled.div`
@@ -170,7 +177,7 @@ const CloseMessage = styled.div`
   font-size: 1rem;
   cursor: pointer;
   z-index: 20001;
-  
+
   &:hover {
     text-decoration: underline;
   }
@@ -268,7 +275,11 @@ export default function ProjectDetail() {
         </MetaData>
       </HeaderSection>
       <ContentSection>
-        {project.href && <OpenLink href={project.href} target="_blank">play with the app</OpenLink>}
+        {project.href && (
+          <OpenLink href={project.href} target="_blank">
+            play with the app
+          </OpenLink>
+        )}
         <Description>{project.description}</Description>
         {project.images && project.images.length > 0 && (
           <ImageGrid>
@@ -302,34 +313,48 @@ export default function ProjectDetail() {
 
       {lightboxSrc && (
         <LightboxOverlay onClick={handleCloseLightbox} onWheel={handleWheel}>
-          <LightboxContent 
+          <LightboxContent
             onClick={(e) => e.stopPropagation()}
             onPointerDown={handlePointerDown}
             onPointerMove={handlePointerMove}
             onPointerUp={handlePointerUp}
             onPointerLeave={handlePointerUp}
           >
-            {(lightboxSrc.endsWith(".mp4") || lightboxSrc.endsWith(".webm")) ? (
-              <LightboxVid src={lightboxSrc} autoPlay loop muted playsInline controls={zoom === 1} $zoom={zoom} $pan={pan} $isDragging={isDragging} />
+            {lightboxSrc.endsWith(".mp4") || lightboxSrc.endsWith(".webm") ? (
+              <LightboxVid
+                src={lightboxSrc}
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls={zoom === 1}
+                $zoom={zoom}
+                $pan={pan}
+                $isDragging={isDragging}
+              />
             ) : (
-              <LightboxImg src={lightboxSrc} alt="Enlarged view" $zoom={zoom} $pan={pan} $isDragging={isDragging} />
+              <LightboxImg
+                src={lightboxSrc}
+                alt="Enlarged view"
+                $zoom={zoom}
+                $pan={pan}
+                $isDragging={isDragging}
+              />
             )}
-            
+
             <ZoomSliderContainer>
               <span>zoom:</span>
-              <ZoomSlider 
-                type="range" 
-                min="1" 
-                max="5" 
-                step="0.1" 
-                value={zoom} 
-                onChange={(e) => setZoom(parseFloat(e.target.value))} 
+              <ZoomSlider
+                type="range"
+                min="1"
+                max="5"
+                step="0.1"
+                value={zoom}
+                onChange={(e) => setZoom(parseFloat(e.target.value))}
               />
             </ZoomSliderContainer>
 
-            <CloseMessage onClick={handleCloseLightbox}>
-              [ close ]
-            </CloseMessage>
+            <CloseMessage onClick={handleCloseLightbox}>[ close ]</CloseMessage>
           </LightboxContent>
         </LightboxOverlay>
       )}
