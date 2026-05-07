@@ -95,6 +95,8 @@ const ProjectImage = styled.img`
   width: 100%;
   height: auto;
   display: block;
+  position: relative;
+  z-index: 10000;
 `;
 
 const NotFound = styled.div`
