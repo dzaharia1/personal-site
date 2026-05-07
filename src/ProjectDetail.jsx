@@ -131,6 +131,8 @@ const LightboxOverlay = styled.div`
   justify-content: center;
   z-index: 20000;
   padding: 24px;
+  touch-action: none;
+  user-select: none;
 `;
 
 const LightboxContent = styled.div`
@@ -140,6 +142,8 @@ const LightboxContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  touch-action: none;
+  user-select: none;
 `;
 
 const LightboxImg = styled.img`
