@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "PhotoPrint",
+    href: "https://github.com/dzaharia1/PhotoPrintApp",
+    description: "batch print photos on a canon pro-100 printer",
+    year: 2026,
+    categories: ["utility"]
+  },
+  {
     title: "secretly candy",
     slug: "secretlycandy",
     href: "https://secretly-candy.adanmade.app",
