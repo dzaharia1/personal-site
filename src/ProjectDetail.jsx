@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import styled from "styled-components";
 import { projects } from "./data";
+import { breakpoints } from "./theme";
 
 const Container = styled.div`
   display: flex;
@@ -11,7 +12,7 @@ const Container = styled.div`
   margin: 0 auto;
   padding: 40px 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     flex-direction: row;
     padding: 80px 48px;
     align-items: flex-start;
@@ -22,7 +23,7 @@ const HeaderSection = styled.div`
   flex: 1;
   margin-bottom: 48px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     position: sticky;
     top: 80px;
     margin-bottom: 0;
@@ -32,9 +33,9 @@ const HeaderSection = styled.div`
 `;
 
 const HomeLink = styled(Link)`
-  color: #cdff8c;
+  color: var(--color-accent);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   display: inline-flex;
   align-items: center;
   margin-bottom: 24px;
@@ -45,8 +46,8 @@ const HomeLink = styled(Link)`
 `;
 
 const MainHeading = styled.h1`
-  color: #cdff8c;
-  font-size: 2.2rem;
+  color: var(--color-accent);
+  font-size: var(--font-size-main-heading);
   font-weight: normal;
   margin: 0 0 8px 0;
   white-space: pre-wrap;
@@ -54,21 +55,21 @@ const MainHeading = styled.h1`
 `;
 
 const MetaData = styled.div`
-  color: #d7ecbc;
-  font-size: 1rem;
+  color: var(--color-text);
+  font-size: var(--font-size-body);
 `;
 
 const ContentSection = styled.div`
   flex: 2;
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     padding-top: 52px; /* aligns description somewhat with header depending on spacing */
   }
 `;
 
 const OpenLink = styled.a`
-  color: #cdff8c;
+  color: var(--color-accent);
   text-decoration: none;
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   display: inline-flex;
   align-items: center;
   margin-bottom: 24px;
@@ -79,8 +80,8 @@ const OpenLink = styled.a`
 `;
 
 const Description = styled.p`
-  color: #d7ecbc;
-  font-size: 1rem;
+  color: var(--color-text);
+  font-size: var(--font-size-body);
   margin: 0 0 32px 0;
   line-height: 1.4;
 `;
@@ -120,7 +121,7 @@ const LightboxOverlay = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(19, 21, 10, 0.95);
+  background-color: var(--color-bg-overlay);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,9 +173,9 @@ const LightboxVid = styled.video`
 `;
 
 const CloseMessage = styled.div`
-  color: #cdff8c;
+  color: var(--color-accent);
   margin-top: 16px;
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   cursor: pointer;
   z-index: 20001;
 
@@ -188,22 +189,22 @@ const ZoomSliderContainer = styled.div`
   align-items: center;
   gap: 12px;
   margin-top: 16px;
-  color: #cdff8c;
-  font-size: 0.9rem;
+  color: var(--color-accent);
+  font-size: var(--font-size-small);
   z-index: 20001;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     display: none;
   }
 `;
 
 const ZoomSlider = styled.input`
-  accent-color: #cdff8c;
+  accent-color: var(--color-accent);
 `;
 
 const NotFound = styled.div`
-  color: #cdff8c;
-  font-size: 1.5rem;
+  color: var(--color-accent);
+  font-size: var(--font-size-sub-heading);
   text-align: center;
   margin-top: 100px;
 `;

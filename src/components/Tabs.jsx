@@ -12,13 +12,13 @@ const TabButton = styled.button`
   background: none;
   border: none;
   padding: 0;
-  color: ${(props) => (props.$active ? "#CDFF8C" : "#D7ECBC")};
+  color: ${(props) => (props.$active ? "var(--color-accent)" : "var(--color-text)")};
   font-family: inherit;
-  font-size: 1rem;
+  font-size: var(--font-size-body);
   cursor: pointer;
 
   &:hover {
-    color: #cdff8c;
+    color: var(--color-accent);
   }
 `;
 
