@@ -7,14 +7,14 @@ const ListingContainer = styled.div`
 `;
 
 const Title = styled.div`
-  color: #cdff8c;
-  font-size: 1rem;
+  color: var(--color-accent);
+  font-size: var(--font-size-title);
   margin-bottom: 4px;
 `;
 
 const TitleLink = styled.a`
-  color: #cdff8c;
-  font-size: 1rem;
+  color: var(--color-accent);
+  font-size: var(--font-size-title);
   text-decoration: none;
 
   &:hover {
@@ -23,8 +23,8 @@ const TitleLink = styled.a`
 `;
 
 const RouterTitleLink = styled(Link)`
-  color: #cdff8c;
-  font-size: 1rem;
+  color: var(--color-accent);
+  font-size: var(--font-size-title);
   text-decoration: none;
 
   &:hover {
@@ -33,8 +33,8 @@ const RouterTitleLink = styled(Link)`
 `;
 
 const Description = styled.div`
-  color: #d7ecbc;
-  font-size: 0.9rem;
+  color: var(--color-text);
+  font-size: var(--font-size-description);
   line-height: 1.4;
 `;
 

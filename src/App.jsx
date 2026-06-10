@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { projects } from "./data";
 import Listing from "./components/Listing";
 import Tabs from "./components/Tabs";
+import { breakpoints } from "./theme";
 
 const AppContainer = styled.div`
   display: flex;
@@ -12,7 +13,7 @@ const AppContainer = styled.div`
   margin: 0;
   padding: 40px 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     flex-direction: row;
     padding: 80px 48px;
     align-items: flex-start;
@@ -23,7 +24,7 @@ const HeaderSection = styled.div`
   width: 100%;
   margin-bottom: 48px;
 
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     position: sticky;
     top: 80px;
     margin-bottom: 0;
@@ -33,8 +34,8 @@ const HeaderSection = styled.div`
 `;
 
 const MainHeading = styled.h1`
-  color: #cdff8c;
-  font-size: 2.2rem;
+  color: var(--color-accent);
+  font-size: var(--font-size-main-heading);
   font-weight: normal;
   margin: 0;
   white-space: pre-wrap;
@@ -42,8 +43,8 @@ const MainHeading = styled.h1`
 `;
 
 const SubHeading = styled.h2`
-  color: #d7ecbc;
-  font-size: 1.5rem;
+  color: var(--color-text);
+  font-size: var(--font-size-sub-heading);
   font-weight: normal;
   margin: 0;
   white-space: pre-wrap;
@@ -52,14 +53,14 @@ const SubHeading = styled.h2`
 
 const ContentSection = styled.div`
   width: 100%;
-  @media (min-width: 768px) {
+  @media (min-width: ${breakpoints.md}) {
     padding-top: 10px; /* align with header */
   }
 `;
 
 const YearHeading = styled.h2`
-  color: #cdff8c;
-  font-size: 1.5rem;
+  color: var(--color-accent);
+  font-size: var(--font-size-year-heading);
   font-weight: normal;
   margin: 40px 0 24px 0;
 
