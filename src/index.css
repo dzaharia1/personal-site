@@ -4,11 +4,11 @@
   /* Colors */
   --color-bg: #0a0d14;
   --color-bg-overlay: rgba(10, 13, 20, 0.95);
-  --color-accent: #ff6b00;
-  --color-text: #ffcc80;
-  --color-text-glow: rgba(255, 204, 128, 0.6);
-  --color-text-scanline: rgba(255, 204, 128, 0.1);
-  --color-text-scanline-transparent: rgba(255, 204, 128, 0);
+  --color-accent: #ff7700;
+  --color-text: #ffb84d;
+  --color-text-glow: rgba(255, 184, 77, 0.6);
+  --color-text-scanline: rgba(255, 184, 77, 0.1);
+  --color-text-scanline-transparent: rgba(255, 184, 77, 0);
 
   /* Typography */
   --font-family: 'JetBrains Mono', monospace;
