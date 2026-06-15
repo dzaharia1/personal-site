@@ -13,7 +13,7 @@ export const projects = [
     description: "Estimate and track the glycemic load of what you're eating.",
     images: ["/projects/secretlycandy/homeandlog.png", "/projects/secretlycandy/details1.png", "/projects/secretlycandy/details2.png"],
     year: 2026,
-    categories: ["utility"]
+    categories: ["utility", "AI"]
   },
   {
     title: "space weather dashboard",
