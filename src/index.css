@@ -13,13 +13,13 @@
   /* Typography */
   --font-family: 'JetBrains Mono', monospace;
   --font-size-base: 20px;
-  --font-size-main-heading: 2.2rem;
-  --font-size-sub-heading: 1.5rem;
-  --font-size-year-heading: 1.5rem;
+  --font-size-main-heading: 1rem;
+  --font-size-sub-heading: 1rem;
+  --font-size-year-heading: 1rem;
   --font-size-title: 1rem;
   --font-size-body: 1rem;
-  --font-size-description: 0.9rem;
-  --font-size-small: 0.9rem;
+  --font-size-description: 1rem;
+  --font-size-small: 1rem;
 
   /* Breakpoints */
   --breakpoint-md: 768px;
@@ -27,6 +27,11 @@
 
 * {
   box-sizing: border-box;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  text-shadow: inherit;
 }
 
 html, body {
@@ -42,7 +47,7 @@ html, body {
 }
 
 body {
-  padding: 12px;
+  padding: 20px;
   color: var(--color-text);
   font-family: var(--font-family);
   -webkit-font-smoothing: antialiased;
@@ -64,7 +69,7 @@ body {
   overflow-y: auto;
 }
 
-body::before {
+#root::before {
   content: "";
   position: fixed;
   top: 0;
@@ -84,10 +89,10 @@ body::before {
       rgba(0, 0, 0, 0.5) 100%
     );
   pointer-events: none;
-  z-index: 9998;
+  z-index: 999998;
 }
 
-body::after {
+#root::after {
   content: "";
   position: fixed;
   top: 0;
@@ -101,7 +106,7 @@ body::after {
     var(--color-text-scanline-transparent) 100%
   );
   pointer-events: none;
-  z-index: 9999;
+  z-index: 999999;
   animation: scanline 6s linear infinite;
 }
 

@@ -11,24 +11,24 @@ const AppContainer = styled.div`
   width: 100%;
   max-width: 1000px;
   margin: 0;
-  padding: 40px 12px;
+  padding: 40px 20px;
 
   @media (min-width: ${breakpoints.md}) {
     flex-direction: row;
-    padding: 80px 48px;
+    padding: 80px 40px;
     align-items: flex-start;
   }
 `;
 
 const HeaderSection = styled.div`
   width: 100%;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 
   @media (min-width: ${breakpoints.md}) {
     position: sticky;
     top: 80px;
     margin-bottom: 0;
-    padding-right: 48px;
+    padding-right: 40px;
     max-width: 350px;
   }
 `;
@@ -53,16 +53,16 @@ const SubHeading = styled.h2`
 
 const ContentSection = styled.div`
   width: 100%;
-  @media (min-width: ${breakpoints.md}) {
-    padding-top: 10px; /* align with header */
-  }
+  // @media (min-width: ${breakpoints.md}) {
+  //   padding-top: 10px; /* align with header */
+  // }
 `;
 
 const YearHeading = styled.h2`
   color: var(--color-accent);
   font-size: var(--font-size-year-heading);
   font-weight: normal;
-  margin: 40px 0 24px 0;
+  margin: 40px 0 20px 0;
 
   &:first-of-type {
     margin-top: 0;

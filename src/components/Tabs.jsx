@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 const TabsContainer = styled.div`
   display: flex;
-  gap: 16px;
+  gap: 0 20px;
   flex-wrap: wrap;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 `;
 
 const TabButton = styled.button`
@@ -15,6 +15,7 @@ const TabButton = styled.button`
   color: ${(props) => (props.$active ? "var(--color-accent)" : "var(--color-text)")};
   font-family: inherit;
   font-size: var(--font-size-body);
+  text-shadow: inherit;
   cursor: pointer;
 
   &:hover {

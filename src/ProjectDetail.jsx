@@ -10,24 +10,24 @@ const Container = styled.div`
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  padding: 40px 12px;
+  padding: 40px 20px;
 
   @media (min-width: ${breakpoints.md}) {
     flex-direction: row;
-    padding: 80px 48px;
+    padding: 80px 40px;
     align-items: flex-start;
   }
 `;
 
 const HeaderSection = styled.div`
   flex: 1;
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 
   @media (min-width: ${breakpoints.md}) {
     position: sticky;
     top: 80px;
     margin-bottom: 0;
-    padding-right: 48px;
+    padding-right: 40px;
     max-width: 300px;
   }
 `;
@@ -38,7 +38,7 @@ const HomeLink = styled(Link)`
   font-size: var(--font-size-body);
   display: inline-flex;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   &:hover {
     text-decoration: underline;
@@ -49,7 +49,7 @@ const MainHeading = styled.h1`
   color: var(--color-accent);
   font-size: var(--font-size-main-heading);
   font-weight: normal;
-  margin: 0 0 8px 0;
+  margin: 0;
   white-space: pre-wrap;
   line-height: 1.2;
 `;
@@ -61,9 +61,6 @@ const MetaData = styled.div`
 
 const ContentSection = styled.div`
   flex: 2;
-  @media (min-width: ${breakpoints.md}) {
-    padding-top: 52px; /* aligns description somewhat with header depending on spacing */
-  }
 `;
 
 const OpenLink = styled.a`
@@ -72,7 +69,7 @@ const OpenLink = styled.a`
   font-size: var(--font-size-body);
   display: inline-flex;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 
   &:hover {
     text-decoration: underline;
@@ -82,14 +79,14 @@ const OpenLink = styled.a`
 const Description = styled.p`
   color: var(--color-text);
   font-size: var(--font-size-body);
-  margin: 0 0 32px 0;
+  margin: 0 0 40px 0;
   line-height: 1.4;
 `;
 
 const ImageGrid = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 `;
 
 const ProjectImage = styled.img`
@@ -126,7 +123,7 @@ const LightboxOverlay = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 20000;
-  padding: 24px;
+  padding: 20px;
   touch-action: none;
   user-select: none;
 `;
@@ -174,7 +171,7 @@ const LightboxVid = styled.video`
 
 const CloseMessage = styled.div`
   color: var(--color-accent);
-  margin-top: 16px;
+  margin-top: 20px;
   font-size: var(--font-size-body);
   cursor: pointer;
   z-index: 20001;
@@ -187,8 +184,8 @@ const CloseMessage = styled.div`
 const ZoomSliderContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 16px;
+  gap: 20px;
+  margin-top: 20px;
   color: var(--color-accent);
   font-size: var(--font-size-small);
   z-index: 20001;

@@ -3,13 +3,13 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const ListingContainer = styled.div`
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 `;
 
 const Title = styled.div`
   color: var(--color-accent);
   font-size: var(--font-size-title);
-  margin-bottom: 4px;
+  margin-bottom: 0;
 `;
 
 const TitleLink = styled.a`
