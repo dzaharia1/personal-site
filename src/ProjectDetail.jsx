@@ -122,7 +122,7 @@ const LightboxOverlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 20000;
+  z-index: 1000000;
   padding: 20px;
   touch-action: none;
   user-select: none;
@@ -174,7 +174,7 @@ const CloseMessage = styled.div`
   margin-top: 20px;
   font-size: var(--font-size-body);
   cursor: pointer;
-  z-index: 20001;
+  z-index: 1000001;
 
   &:hover {
     text-decoration: underline;
@@ -188,7 +188,7 @@ const ZoomSliderContainer = styled.div`
   margin-top: 20px;
   color: var(--color-accent);
   font-size: var(--font-size-small);
-  z-index: 20001;
+  z-index: 1000001;
 
   @media (min-width: ${breakpoints.md}) {
     display: none;
