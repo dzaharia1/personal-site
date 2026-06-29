@@ -18,6 +18,19 @@ jobs:
         with:
           credentials_json: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_DANZAHARIA_PERSONAL_SITE }}
       - name: Deploy to Firebase Hosting
-        run: npx -y firebase-tools@latest deploy --only hosting --project danzaharia-personal-site
+        run: |
+          set +e
+          output=$(npx -y firebase-tools@latest deploy --only hosting --project danzaharia-personal-site 2>&1)
+          status=$?
+          set -e
+          echo "$output"
+          if [ $status -ne 0 ]; then
+            if echo "$output" | grep -q "is the current active version"; then
+              echo "Deployment completed successfully (ignored known duplicate release false-positive)."
+              exit 0
+            else
+              exit $status
+            fi
+          fi
         env:
           GOOGLE_APPLICATION_CREDENTIALS: ${{ steps.auth.outputs.credentials_file_path }}
