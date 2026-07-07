@@ -1,5 +1,12 @@
 export const projects = [
   {
+    title: "hangar",
+    href: "https://github.com/dzaharia1/Hangar",
+    description: "a native macOS app to orchestrate and monitor my firebase app deployments",
+    year: 2026,
+    categories: ["utility"]
+  },
+  {
     title: "PhotoPrint",
     href: "https://github.com/dzaharia1/PhotoPrintApp",
     description: "batch print photos on a canon pro-100 printer",
