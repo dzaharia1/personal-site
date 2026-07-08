@@ -51,6 +51,27 @@ const SubHeading = styled.h2`
   line-height: 1.2;
 `;
 
+const LinksContainer = styled.div`
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+`;
+
+const NavLink = styled.a`
+  color: var(--color-accent);
+  font-size: var(--font-size-body);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
+
+const Separator = styled.span`
+  color: var(--color-text);
+`;
+
 const ContentSection = styled.div`
   width: 100%;
   // @media (min-width: ${breakpoints.md}) {
@@ -96,6 +117,19 @@ function App() {
       <HeaderSection>
         <MainHeading>Dan Zaharia</MainHeading>
         <SubHeading>projects</SubHeading>
+        <LinksContainer>
+          <NavLink href="https://www.linkedin.com/in/danny-zaharia-900843215/" target="_blank" rel="noopener noreferrer">
+            in
+          </NavLink>
+          <Separator>|</Separator>
+          <NavLink href="https://github.com/dzaharia1" target="_blank" rel="noopener noreferrer">
+            gh
+          </NavLink>
+          <Separator>|</Separator>
+          <NavLink href="http://danzaharia.com" target="_blank" rel="noopener noreferrer">
+            ux
+          </NavLink>
+        </LinksContainer>
       </HeaderSection>
       <ContentSection>
         <Tabs
