@@ -21,24 +21,11 @@ export const projects = [
     categories: ["astronomy", "play", "AI"]
   },
   {
-    title: "hangar",
-    href: "https://github.com/dzaharia1/Hangar",
-    description: "a native macOS app to orchestrate and monitor my firebase app deployments",
-    year: 2026,
-    categories: ["utility"]
-  },
-  {
-    title: "PhotoPrint",
-    href: "https://github.com/dzaharia1/PhotoPrintApp",
-    description: "batch print photos on a canon pro-100 printer",
-    year: 2026,
-    categories: ["utility"]
-  },
-  {
-    title: "secretly candy",
+    title: "secretly candy 2.0",
     slug: "secretlycandy",
     href: "https://secretly-candy.adanmade.app",
-    description: "Estimate and track the glycemic load of what you're eating.",
+    description: "track your meals by analyzing and logging their glycemic impact",
+    longDescription: "Analyze photos or descriptions of meals and use the USDA nutritional database to determine their macronutrient contents. then estimate their glycemic impact to help motivate and log healthy carbohydrate intake",
     images: [
       "/projects/secretlycandy/01-02-home-daily.png",
       "/projects/secretlycandy/04-04a-home-weekly.png",
@@ -49,6 +36,32 @@ export const projects = [
     ],
     year: 2026,
     categories: ["utility", "AI"]
+  },
+  {
+    title: "hangar",
+    href: "https://github.com/dzaharia1/Hangar",
+    description: "a native macOS app to orchestrate and monitor my firebase app deployments",
+    year: 2026,
+    categories: ["utility"]
+  },
+  {
+    title: "secretly candy",
+    slug: "secretlycandy-v1",
+    description: "estimate the glycemic impact of what you're eating",
+    images: [
+      "/projects/secretlycandy/ARCHIVE/homeandlog.png",
+      "/projects/secretlycandy/ARCHIVE/details1.png",
+      "/projects/secretlycandy/ARCHIVE/details2.png"
+    ],
+    year: 2026,
+    categories: ["utility", "AI"]
+  },
+  {
+    title: "PhotoPrint",
+    href: "https://github.com/dzaharia1/PhotoPrintApp",
+    description: "batch print photos on a canon pro-100 printer",
+    year: 2026,
+    categories: ["utility"]
   },
   {
     title: "space weather dashboard",
