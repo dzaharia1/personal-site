@@ -127,7 +127,7 @@ function App() {
           </NavLink>
           <Separator>|</Separator>
           <NavLink href="http://danzaharia.com" target="_blank" rel="noopener noreferrer">
-            ux
+            work
           </NavLink>
         </LinksContainer>
       </HeaderSection>
