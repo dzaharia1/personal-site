@@ -63,13 +63,19 @@ const ContentSection = styled.div`
   flex: 2;
 `;
 
+const LinksRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+`;
+
 const OpenLink = styled.a`
   color: var(--color-accent);
   text-decoration: none;
   font-size: var(--font-size-body);
   display: inline-flex;
   align-items: center;
-  margin-bottom: 20px;
 
   &:hover {
     text-decoration: underline;
@@ -273,12 +279,21 @@ export default function ProjectDetail() {
         </MetaData>
       </HeaderSection>
       <ContentSection>
-        {project.href && (
-          <OpenLink href={project.href} target="_blank">
-            play with the app
-          </OpenLink>
+        {(project.href || project.github) && (
+          <LinksRow>
+            {project.href && (
+              <OpenLink href={project.href} target="_blank" rel="noopener noreferrer">
+                play with the app
+              </OpenLink>
+            )}
+            {project.github && (
+              <OpenLink href={project.github} target="_blank" rel="noopener noreferrer">
+                view on github
+              </OpenLink>
+            )}
+          </LinksRow>
         )}
-        <Description>{project.description}</Description>
+        <Description>{project.longDescription || project.description}</Description>
         {project.images && project.images.length > 0 && (
           <ImageGrid>
             {project.images.map((src, idx) => {

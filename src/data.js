@@ -1,5 +1,26 @@
 export const projects = [
   {
+    title: "pointoscope",
+    slug: "pointoscope",
+    github: "https://github.com/dzaharia1/toposcope",
+    description: "a motorized tabletop arrow that points at migrating whales, flights, satellites, planets, or anything else you name.",
+    longDescription: "a motorized tabletop arrow in new york that points at migrating whales, live flights, satellites, planets, NYC subway trains, earthquakes, or anything else you name via gemini—tilting down through the earth when a target is below the horizon. driven by a raspberry pi with dual stepper motors in a 3D-printed housing, paired with a react web app and firebase backend.",
+    images: [
+      "/projects/pointoscope/1-pointoscope-in-situ.JPG",
+      "/projects/pointoscope/2-pointoscope-gallery.jpg",
+      "/projects/pointoscope/2-1-pointoscope-section-view-elevation.png",
+      "/projects/pointoscope/2-2-pointoscope-section-view-azimuth.png",
+      "/projects/pointoscope/3-pointoscope-prototype.jpg",
+      "/projects/pointoscope/4-pointoscope-mounting-plate.jpg",
+      "/projects/pointoscope/5-pointoscope-mounting-plate-populated.jpg",
+      "/projects/pointoscope/6-pointoscope-housing.jpg",
+      "/projects/pointoscope/7-pointoscope-slew-gear.jpg",
+      "/projects/pointoscope/8-pointoscope-elevation-gear.jpg"
+    ],
+    year: 2026,
+    categories: ["astronomy", "play", "AI"]
+  },
+  {
     title: "hangar",
     href: "https://github.com/dzaharia1/Hangar",
     description: "a native macOS app to orchestrate and monitor my firebase app deployments",
