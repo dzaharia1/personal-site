@@ -39,7 +39,14 @@ export const projects = [
     slug: "secretlycandy",
     href: "https://secretly-candy.adanmade.app",
     description: "Estimate and track the glycemic load of what you're eating.",
-    images: ["/projects/secretlycandy/homeandlog.png", "/projects/secretlycandy/details1.png", "/projects/secretlycandy/details2.png"],
+    images: [
+      "/projects/secretlycandy/01-02-home-daily.png",
+      "/projects/secretlycandy/04-04a-home-weekly.png",
+      "/projects/secretlycandy/05-home-monthly.png",
+      "/projects/secretlycandy/06-07-report.png",
+      "/projects/secretlycandy/08-09-report.png",
+      "/projects/secretlycandy/10-.png"
+    ],
     year: 2026,
     categories: ["utility", "AI"]
   },
